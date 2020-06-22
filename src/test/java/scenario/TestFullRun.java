@@ -17,6 +17,7 @@ public class TestFullRun extends BaseTest {
                 .search("Lenovo y 700")
         .clickBy(new By.ByXPath("//div[@id='p-379173268']//img[@class='lazy']"));
         Thread.sleep(5000);
+        driver.findElement(new By.ByXPath("//a[@class='btn btnGrey btnAddBasket']")).click();
 
 
 

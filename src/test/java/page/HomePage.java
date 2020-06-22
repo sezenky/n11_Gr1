@@ -26,7 +26,7 @@ public class HomePage extends BasePage {
 
     public HomePage callProductDetailPage() {
         clickBy(By.className("btnAddBasket"));
-       return this;
+       return this ;
 
     }
 
