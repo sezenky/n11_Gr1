@@ -24,11 +24,7 @@ public class HomePage extends BasePage {
         return new LoginPage(driver);
     }
 
-    public HomePage callProductDetailPage() {
-        clickBy(By.className("btnAddBasket"));
-       return this ;
 
-    }
 
 
 }
