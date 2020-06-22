@@ -3,21 +3,33 @@ package scenario;
 import base.BaseTest;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import page.HomePage;
 
 public class TestFullRun extends BaseTest {
 
     @Test
-    public void fullTest() {
+    public void fullTest() throws InterruptedException {
 
         new HomePage(driver)
                 .callLoginPage()
                 .login("", "")
                 .search("Lenovo y 700")
-                .clickBy(By.id("p-416248653"));
+        .clickBy(new By.ByXPath("//div[@id='p-379173268']//img[@class='lazy']"));
+        Thread.sleep(5000);
+
 
 
     }
 
 
+
+
 }
+
+
+
+
+
+
+

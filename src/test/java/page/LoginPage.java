@@ -12,7 +12,7 @@ public class LoginPage extends BasePage {
 
     public LoginPage login(String username, String password) {
         setById("email", "sezen.kaya@n11.com");
-        setById("password", "****");
+        setById("password", "*110277*Sk*Sk*");
         clickBy(By.id("loginButton"));
 
         return this;
