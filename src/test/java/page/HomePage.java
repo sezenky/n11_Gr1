@@ -4,6 +4,7 @@ package page;
 import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
 
@@ -24,11 +25,11 @@ public class HomePage extends BasePage {
         return new LoginPage(driver);
     }
 
-    public HomePage callProductDetailPage() {
-        clickBy(By.className("btnAddBasket"));
-       return this;
 
+    public BasketPage callBasketPage(){
+        WebElement newAdress = driver.findElement(By.xpath("//div[8]//div[3]//p[1]"));
+        newAdress.click();
+        return new BasketPage(driver);
     }
-
 
 }

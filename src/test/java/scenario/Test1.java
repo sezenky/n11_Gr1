@@ -20,22 +20,19 @@ public class Test1 extends BaseTest {
     }
 
     @Test
-    public void searchTest() {
+    public void searchTest() throws InterruptedException {
 
         new HomePage(driver)
                 .search("Lenovo y 700")
-                .clickBy(By.id("p-416248653"));
-
-    }
-
-    @Test
-    public void addBasket() {
-
-        new ProductDetailPage(driver)
-                .productDetailPage().clickBy(By.className("btnAddBasket"));
+                .clickBy(new By.ByXPath("//div[@id='p-379173268']//img[@class='lazy']"));
+        Thread.sleep(5000);
+        driver.findElement(new By.ByXPath("//a[@class='btn btnGrey btnAddBasket']")).click();
 
 
     }
+
+
+
 
 
 }

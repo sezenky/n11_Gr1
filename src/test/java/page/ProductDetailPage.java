@@ -11,7 +11,7 @@ public class ProductDetailPage extends BasePage {
     }
 
     public ProductDetailPage productDetailPage(){
-        clickBy(By.className("btnAddBasket"));
+      clickBy(new By.ByXPath("//a[@class='btn btnGrey btnAddBasket']"));
         return new ProductDetailPage(driver);
     }
 
