@@ -12,6 +12,7 @@ public class TestFullRun extends BaseTest {
 
     @Test
     public void fullTest() throws InterruptedException {
+        Thread.sleep(5000);
 
         new HomePage(driver)
                 .callLoginPage()
