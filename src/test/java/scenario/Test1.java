@@ -15,6 +15,7 @@ public class Test1 extends BaseTest {
         new HomePage(driver)
                 .callLoginPage()
                 .login("", "");
+        //driver.close();
 
 
     }
