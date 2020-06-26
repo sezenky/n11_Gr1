@@ -46,6 +46,14 @@ public class BasePage {
         Select select = new Select(element);
         select.selectByValue(value);
     }
+    public void selectFromDropDownList(By by,String value){
+        clickBy(by);
+        WebElement eleman=driver.findElement(by);
+        //By.xpath("//*[@id='birthDay']")
+        Select select=new Select(eleman);
+        select.selectByVisibleText(value);
+        select.getFirstSelectedOption();
+    }
 
 
 }

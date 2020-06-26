@@ -9,11 +9,16 @@ public class BaseTest {
 
     public WebDriver driver;
 
+
+    public void baseStep(){
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver 3");
+        driver = new ChromeDriver();
+    }
+
     @Before
     public void before() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
-        driver = new ChromeDriver();
+        baseStep();
         driver.get("https://www.n11.com");
 
     }
