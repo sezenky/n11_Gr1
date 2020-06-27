@@ -10,6 +10,7 @@ public class RegisterTest extends BaseTest {
     public void before() throws InterruptedException {
         super.baseStep();
         driver.get("https://qa.n11.com/");
+        //driver.quit();
     }
 
     @Test
